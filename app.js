@@ -149,7 +149,7 @@ for(i = 0; i < 1; i++) {
     console.log(ninjaTurtles[2].toUpperCase());
     console.log(ninjaTurtles[3].toUpperCase());
   }
-// Ugly AF, forgot how to list the whole array in one line
+// Ugly and wet, forgot how to list the whole array in one line and my iterations failed
 // After committing, it said nothing to commit, tree up to date...
 
 /*
@@ -199,21 +199,40 @@ let kristynsShoe = "left shoe";
 
 thomsCloset[2].push(kristynsShoe);
 
+// Dress 'em Up ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Q1 I want to create a function that lists all items in a new object with a console log and`$[] = their outfit
+// I could use math random to randomize, or rely on user input to select outfit. Neither I remember so I'm returning if I have time
+
+const kristynsOutfits = function kristynsOutfits() {
+    console.log(`Kristyn's 1st outfit includes ${kristynsCloset[5]}, ${kristynsCloset[3]} & ${kristynsCloset[0]}.`);
+    console.log(`Her 2nd outfit includes ${kristynsCloset[1]}, ${kristynsCloset[2]} & ${kristynsCloset[4]}.`);
+    console.log(`Her 3rd outfit includes ${kristynsCloset[1]}, ${kristynsCloset[3]} & ${kristynsCloset[2]}.`);
+  } 
+    
+  kristynsOutfits();
+  
+  const thomsOutfits = function thomsOutfits() {
+    console.log(`Thom's 1st outfit includes a ${thomsCloset[0][0]}, ${thomsCloset[1][0]} & ${thomsCloset[2][0]}.`);
+    console.log(`His 2nd outfit includes a ${thomsCloset[0][1]}, ${thomsCloset[1][1]} & ${thomsCloset[2][1]}.`);
+    console.log(`His 3rd outfit includes a ${thomsCloset[0][2]}, ${thomsCloset[1][2]} & ${thomsCloset[2][2]}.`);
+  } 
+  
+  thomsOutfits();
+
+
+// Dirty Laundry ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Q1 Had to alter my parameters a few times until it worked!
+
+  for(let i = 0; i < kristynsCloset.length; i ++) {
+    console.log(`WHIRR: Now washing ${kristynsCloset[i]}.`)
+}
+
 // Q2
 
+console.log(thomsCloset[0] + thomsCloset[1] + thomsCloset[2]); // How to squeeze together hmmmm...
+// I think this question was asking me to call on the arrays, not the individual elements, which is why I did what I did, as opposed to calling the point in memory where the arrays are.
 
 
-  ### Dress 'em Up
-  1. Modify your code to put together **3 separate outfits** for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
-  
-  <hr>
-  &#x1F534; The commit message should read: <br>
-  "Commit 7 - Kristyn and Thom have their outfits ready for class - array practice"
-  <hr>
-  
-  ### Dirty Laundry
-  Continue looking at the closet arrays:
-  1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
   
   ### Inventory
   2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
