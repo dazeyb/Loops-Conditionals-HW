@@ -77,24 +77,151 @@ for(let i = 1; i <= 20; i ++) {
     }
 }
 
-// Fizz Buzz Q1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Fizz Buzz ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Answered this in 2 minutes, spent 35 minutes diagnosing a curly, lesson learned! for(parameters){code}; // Anything outside is undefined
 
-const fizz = "Fizz";
-const buzz = "Buzz";
-const fizzBuzz = "FizzBuzz";
 
-for(let i = 1; i <=100; i ++) {
+for(let i = 1; i <=100; i++) {
     console.log(i);
-} if(i % 3 === 0 && i%5 === 0) {
+    
+    if(i % 3 === 0 && i % 5 === 0) {
     console.log("FizzBuzz");
-} else if(i % 3 === 0) {
+
+}   else if(i % 3 === 0) {
     console.log("Fizz");
-} else if(i % 5 === 0) {
+    
+}   else if(i % 5 === 0) {
     console.log("Buzz");
+    }
 }
 
 
 
+// Getting to Know You ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+const kenny = ["Kenny", 1000, "Austin"];
+const jimHaff = ["Jim H", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const jimClark = ["Jim C", 186, "LA"];
+const ryan = ["Ryan", 65, "Denver"];
+
+// Q1
+
+kenny[0] = "Gameboy";
+
+// Q2
+
+jimClark[1] = jimClark[1] + 1;
+
+// Q3
+
+ryan[2] = "Gotham City";
+
+// Q4
+
+reuben.pop();
+reuben.push("Chicago");
+
+// Q5
+
+/* 1st attempt
+jimHaff.pop();
+jimHaff.push("Marrakech", "Naypyitaw", "El Dorado");
+*/
+
+jimHaff.splice(3, 1,"Marrakech", "Naypyitaw", "El Dorado");
 
 
+// Q6
+
+jimHaff.splice(2, 1);
+
+
+
+// Yell at the Ninja Turtles ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Q1
+
+const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+
+for(i = 0; i < 1; i++) {
+    console.log(ninjaTurtles[0].toUpperCase());
+    console.log(ninjaTurtles[1].toUpperCase());
+    console.log(ninjaTurtles[2].toUpperCase());
+    console.log(ninjaTurtles[3].toUpperCase());
+  }
+// Ugly AF, forgot how to list the whole array in one line
+// After committing, it said nothing to commit, tree up to date...
+
+/*
+3. Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, make the letters alternate back and forth between uppercase and lowercase.
+*/
+
+
+// Return of the Closets ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+
+const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+  
+// Alien Attire ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Q1
+
+krystinsCloset.splice(0, 1);
+
+let kristynsShoe = "left shoe";
+
+thomsCloset[2].push(kristynsShoe);
+
+// Q2
+
+
+
+  ### Dress 'em Up
+  1. Modify your code to put together **3 separate outfits** for Kristyn and Thom. Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+  
+  <hr>
+  &#x1F534; The commit message should read: <br>
+  "Commit 7 - Kristyn and Thom have their outfits ready for class - array practice"
+  <hr>
+  
+  ### Dirty Laundry
+  Continue looking at the closet arrays:
+  1. Time to do laundry - loop through Kristyn's closet and log the sentence "WHIRR: Now washing (item)" for each item in the array.
+  
+  ### Inventory
+  2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
+  
+  <hr>
+  &#x1F534; The commit message should read: <br>
+  "Commit 8 - I loops through their closets".
+  <hr>
+
+  */</hr>
 
