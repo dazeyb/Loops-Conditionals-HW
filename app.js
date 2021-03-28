@@ -15,7 +15,27 @@ for(let i = 1; i <= 20; i ++) {
 }
 */ 
 
-// I tried to get rid of the undefined and mess around with an if statement nested but it returned the same thing.
+// I tried to get rid of the undefined (shows up in my terminal after running) and mess around with an if statement nested but it returned the same thing.
+
+
+
+
+
+// Get Even ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/*  This wasn't working and then I realized I was overengineering
+for(let i = 1; i <= 200; i ++ ) {
+    if {i % 2 == 0) {
+        console.log(i);
+    }
+}
+*/
+
+for(let i = 2; i < 200; i += 2) {
+        console.log(i);
+}
+
+
 
 // Excited Kitten Q1 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -65,11 +85,11 @@ const fizzBuzz = "FizzBuzz";
 
 for(let i = 1; i <=100; i ++) {
     console.log(i);
-} if(i%3 === 0 && i%5 === 0) {
+} if(i % 3 === 0 && i%5 === 0) {
     console.log("FizzBuzz");
-} else if(i%3 === 0) {
+} else if(i % 3 === 0) {
     console.log("Fizz");
-} else if(i%5 === 0) {
+} else if(i % 5 === 0) {
     console.log("Buzz");
 }
 
