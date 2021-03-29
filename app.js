@@ -227,20 +227,29 @@ const kristynsOutfits = function kristynsOutfits() {
     console.log(`WHIRR: Now washing ${kristynsCloset[i]}.`)
 }
 
+
+// Inventory ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Q2
 
 console.log(thomsCloset[0] + thomsCloset[1] + thomsCloset[2]); // How to squeeze together hmmmm...
+
 // I think this question was asking me to call on the arrays, not the individual elements, which is why I did what I did, as opposed to calling the point in memory where the arrays are.
 
 
-  
-  ### Inventory
-  2. Thom wants to do inventory on his closet. Using **bracket notation**, log the **arrays** (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
-  
-  <hr>
-  &#x1F534; The commit message should read: <br>
-  "Commit 8 - I loops through their closets".
-  <hr>
 
-  */</hr>
+// Multiples of 3 and 5 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+let totalSum = 0;
+
+for(let i = 0; i < 1000; i++) {
+    if(i % 3 === 0 || i % 5 ===0){
+        totalSum = totalSum + i;
+
+    } else if(i % 3 === 0 && i % 5 ===0) {
+        totalSum = totalSum + i;
+    }
+}
+
+console.log(totalSum);
+
+// This was a fun one, I learned a lot by trying different things, I'm 99% sure it's correct.
