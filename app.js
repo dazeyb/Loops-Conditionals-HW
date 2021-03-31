@@ -23,13 +23,7 @@ for(let i = 1; i <= 20; i ++) {
 
 // Get Even ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-/*  This wasn't working and then I realized I was overengineering
-for(let i = 1; i <= 200; i ++ ) {
-    if {i % 2 == 0) {
-        console.log(i);
-    }
-}
-*/
+//Forgot the = again
 
 for(let i = 2; i < 200; i += 2) {
         console.log(i);
@@ -71,7 +65,6 @@ for(let i = 1; i <= 20; i ++) {
     if(i%2 === 0) {
         let kittySays = Math.floor(Math.random([i]) * kittyPhrases.length);
         console.log(kittyPhrases[kittySays]);
-        kittyFunction(); // I left this in, it wasn't clear to me if they were only supposed to to give the even number responses on evens, or if both were to be said on evens. If it was supposed to alternate then commenting this out will work.
 }   else {
     kittyFunction();
     }
@@ -82,7 +75,6 @@ for(let i = 1; i <= 20; i ++) {
 
 
 for(let i = 1; i <=100; i++) {
-    console.log(i);
     
     if(i % 3 === 0 && i % 5 === 0) {
     console.log("FizzBuzz");
@@ -92,7 +84,9 @@ for(let i = 1; i <=100; i++) {
     
 }   else if(i % 5 === 0) {
     console.log("Buzz");
-    }
+}  else {
+   console.log(i);
+}
 }
 
 
@@ -143,12 +137,11 @@ jimHaff.splice(2, 1);
 
 const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
-for(i = 0; i < 1; i++) {
-    console.log(ninjaTurtles[0].toUpperCase());
-    console.log(ninjaTurtles[1].toUpperCase());
-    console.log(ninjaTurtles[2].toUpperCase());
-    console.log(ninjaTurtles[3].toUpperCase());
-  }
+for(i = 0; i < ninjaTurtles.length; i++) {
+    console.log(ninjaTurtles[i].toUpperCase());
+}
+
+
 // Ugly and wet, forgot how to list the whole array in one line and my iterations failed
 // After committing, it said nothing to commit, tree up to date...
 
@@ -253,3 +246,4 @@ for(let i = 0; i < 1000; i++) {
 console.log(totalSum);
 
 // This was a fun one, I learned a lot by trying different things, I'm 99% sure it's correct.
+// Not sure why "totalSum += i" wasn't working, so I wrote it all out
