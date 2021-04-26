@@ -25,7 +25,7 @@ for(let i = 1; i <= 20; i ++) {
 
 //Forgot the = again
 
-for(let i = 2; i < 200; i += 2) {
+for(let i = 2; i <= 200; i += 2) {
         console.log(i);
 }
 
